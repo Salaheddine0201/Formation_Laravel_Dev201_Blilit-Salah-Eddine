@@ -6,10 +6,7 @@
     <div class="container mt-4">
         <h1>Post Details</h1>
         <div class="p-4 rounded shadow">
-            <p><strong>ID:</strong> {{ $id }}</p>
-            <p><strong>Livre:</strong> {{ $livre }}</p>
-            <p><strong>Title:</strong> {{ $post['title'] }}</p> <!-- Now works! -->
-            <p><strong>Content:</strong> {{ $post['livre'] }}</p>
+            <p>{{ $data['title'] ?? 'Post not found' }}</p>
         </div>
     </div>
 @endsection
